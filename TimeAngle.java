@@ -27,6 +27,6 @@ public class TimeAngle {
 		double angle1 = Math.abs(wrtHrs-wrtMin);
 		double angle2 = 360-angle1;
 
-		System.out.println("The minimum angle between Minute and Hour hand is : "+Math.min(angle1, angle2));
+		System.out.println("The minimum angle between Minute and Hour hand is : "+Math.min(angle1, angle2)+" degrees");
 	}
 }
