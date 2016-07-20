@@ -1,4 +1,4 @@
-package com.qait.assignment1;
+package com.qait.assignments;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class TimeAngle {
 		String[] hhmm =time.split(":");
 		int hh = Integer.parseInt(hhmm[0]);	//Typecasting the hour string to integer
 		int mm = Integer.parseInt(hhmm[1]); //Typecasting the minute string to integer
-		System.out.println("The time is : "+hh+ " hour(s) and "+mm+" minute(s)");
+		System.out.println("The time entered is : "+hh+ " hour(s) and "+mm+" minute(s)");
 
 		if(mm>=60)
 			System.out.println("The minute format is invalid.");
@@ -27,6 +27,6 @@ public class TimeAngle {
 		double angle1 = Math.abs(wrtHrs-wrtMin);
 		double angle2 = 360-angle1;
 
-		System.out.println(Math.min(angle1, angle2));
+		System.out.println("The minimum angle between Minute and Hour hand is : "+Math.min(angle1, angle2));
 	}
 }
